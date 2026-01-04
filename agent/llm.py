@@ -24,7 +24,6 @@ def chat_completion(messages, tools = None):
 def summarize_conversation(history):
     prompt = f"""
 Summarize the following conversation in 2 short sentences:
-
 {history}
 """
     response = local_llm.chat.completions.create(

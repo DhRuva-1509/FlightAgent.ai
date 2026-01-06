@@ -1,9 +1,6 @@
-class ConversationMemeory:
-    '''
-    A class to manage and store conversation history for an agent.
-    '''
+class ConversationMemory:
     def __init__(self):
         self.summary = ""
-    
-    def update_summary(self, new_summary: str):
+
+    def update(self, new_summary: str):
         self.summary = new_summary
